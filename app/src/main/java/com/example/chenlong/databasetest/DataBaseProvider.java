@@ -28,7 +28,7 @@ public class DataBaseProvider extends ContentProvider {
 
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        uriMatcher.addURI(AUTHORITY, "book", BOOK_DIR);
+        uriMatcher.addURI(AUTHORITY, "book", BOOK_DIR);     //具体的匹配uri
         uriMatcher.addURI(AUTHORITY, "book/#", BOOK_ITEM);
     }
 
